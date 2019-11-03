@@ -2,7 +2,7 @@ package loops;
 
 import java.util.Scanner;
 
-public class Task08 {
+class Task08 {
     private static final int DIGITS_NUMBER = 10;
 
     public static void main(String[] args) {
