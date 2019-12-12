@@ -2,6 +2,7 @@ package condition;
 
 import java.util.Scanner;
 
+@SuppressWarnings("ManualMinMaxCalculation")
 class Task02 {
     private static final String INPUT_MSG = "Enter the numbers a, b, c, d in order:";
 
