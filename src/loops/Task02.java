@@ -2,6 +2,7 @@ package loops;
 
 import java.util.Scanner;
 
+@SuppressWarnings("SuspiciousNameCombination")
 class Task02 {
     private static final String INPUT_STEP_MSG = "Enter step size:";
     private static final String INPUT_INTERVAL_MSG = "Enter [a,b] interval:";
