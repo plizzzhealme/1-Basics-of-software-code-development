@@ -16,7 +16,6 @@ class Task01 {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = TRIANGLE_SUM - a - b;
-
         if (a > 0 && b > 0 && c > 0) {
             System.out.printf(TRIANGLE_MSG, a, b);
             if (c == RIGHT_ANGLE) {

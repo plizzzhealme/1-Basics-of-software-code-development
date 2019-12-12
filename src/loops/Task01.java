@@ -3,7 +3,7 @@ package loops;
 import java.util.Scanner;
 
 class Task01 {
-    private static final String INPUT_MSG = "Input any number:";
+    private static final String INPUT_MSG = "Enter any number:";
     private static final String OUTPUT_MSG = "Sum = %d";
 
     public static void main(String[] args) {
@@ -11,7 +11,6 @@ class Task01 {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int sum = 0;
-
         for (int i = 1; i <= n; i++) {
             sum += i;
         }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static java.lang.Math.pow;
 
 class Task05 {
-    private static final String INPUT_MSG = "Input e:";
+    private static final String INPUT_MSG = "Enter e:";
     private static final String OUTPUT_MSG = "Sum = %.3f.";
     private static final double ROW_SUM = 1.5;
 
@@ -13,7 +13,6 @@ class Task05 {
         System.out.println(INPUT_MSG);
         Scanner in = new Scanner(System.in);
         double e = in.nextDouble();
-
         double sum = 0;
         if (e <= 0) {
             sum = ROW_SUM;

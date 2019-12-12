@@ -3,9 +3,9 @@ package condition;
 import java.util.Scanner;
 
 class Task03 {
-    private static final String INPUT_A_MSG = "Input A x and y coordinates:";
-    private static final String INPUT_B_MSG = "Input B x and y coordinates:";
-    private static final String INPUT_C_MSG = "Input C x and y coordinates:";
+    private static final String INPUT_A_MSG = "Enter A x and y coordinates:";
+    private static final String INPUT_B_MSG = "Enter B x and y coordinates:";
+    private static final String INPUT_C_MSG = "Enter C x and y coordinates:";
     private static final String COLLINEAR_MSG = "These points are collinear.";
     private static final String NOT_COLLINEAR_MSG = "These points are not collinear.";
 
@@ -20,7 +20,6 @@ class Task03 {
         System.out.println(INPUT_C_MSG);
         double x3 = in.nextDouble();
         double y3 = in.nextDouble();
-
         if ((x1 - x3) * (y2 - y3) == (x2 - x3) * (y1 - y3)) {
             System.out.println(COLLINEAR_MSG);
         } else {

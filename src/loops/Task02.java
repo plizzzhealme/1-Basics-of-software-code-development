@@ -3,8 +3,8 @@ package loops;
 import java.util.Scanner;
 
 class Task02 {
-    private static final String INPUT_STEP_MSG = "Input step:";
-    private static final String INPUT_INTERVAL_MSG = "Input [a,b] interval:";
+    private static final String INPUT_STEP_MSG = "Enter step size:";
+    private static final String INPUT_INTERVAL_MSG = "Enter [a,b] interval:";
     private static final String OUTPUT_MSG = "f(%.2f) = %.2f\n";
 
     public static void main(String[] args) {
@@ -14,18 +14,17 @@ class Task02 {
         double b = in.nextDouble();
         System.out.println(INPUT_STEP_MSG);
         double h = in.nextDouble();
-
-        double x = a;
-        double y;
+        double currentX = a;
+        double currentY;
         if (a <= b) {
-            for (int i = 1; x <= b; i++) {
-                if (x > 2 || x == 0) {
-                    y = x;
+            for (int i = 1; currentX <= b; i++) {
+                if (currentX > 2 || currentX == 0) {
+                    currentY = currentX;
                 } else {
-                    y = -x;
+                    currentY = -currentX;
                 }
-                System.out.printf(OUTPUT_MSG, x, y);
-                x = a + i * h;
+                System.out.printf(OUTPUT_MSG, currentX, currentY);
+                currentX = a + i * h;
             }
         }
     }

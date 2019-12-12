@@ -3,8 +3,8 @@ package condition;
 import java.util.Scanner;
 
 class Task04 {
-    private static final String INPUT_HOLE_MSG = "Input hole A and B dimensions:";
-    private static final String INPUT_BRICK_MSG = "Input brick x, y and z dimensions:";
+    private static final String INPUT_HOLE_MSG = "Enter hole A and B dimensions:";
+    private static final String INPUT_BRICK_MSG = "Enter brick x, y and z dimensions:";
     private static final String PASS_MSG = "You shall pass.";
     private static final String NOT_PASS_MSG = "YOU SHALL NOT PASS!";
 
@@ -17,7 +17,6 @@ class Task04 {
         int x = in.nextInt();
         int y = in.nextInt();
         int z = in.nextInt();
-
         if (x <= a && y <= b
                 || y <= a && x <= b
                 || x <= a && z <= b
