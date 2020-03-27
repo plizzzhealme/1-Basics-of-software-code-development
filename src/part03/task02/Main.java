@@ -1,15 +1,18 @@
 package part03.task02;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getDouble;
 
 class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        double a;
+        double b;
+        double h;
+
         System.out.println("Enter the interval");
-        double a = in.nextDouble();
-        double b = in.nextDouble();
-        System.out.println("Enter the step");
-        double h = in.nextDouble();
+        a = getDouble();
+        b = getDouble();
+        System.out.println("Enter the step size");
+        h = getDouble();
         printFunctionValues(a, b, h);
     }
 
@@ -17,12 +20,20 @@ class Main {
         double currentX = a;
         double currentY;
 
-        if (a <= b) {
-            for (int i = 1; currentX <= b; i++) {
-                currentY = calcFunction(currentX);
-                System.out.printf("f(%.2f) = %.2f%n", currentX, currentY);
-                currentX = a + i * h;
-            }
+        if (h <= 0) {
+            System.out.printf("Incorrect step value h = %.2f", h);
+            return;
+        }
+
+        if (a > b) {
+            System.out.printf("Incorrect interval [%.2f; %.2f]", a, b);
+            return;
+        }
+
+        for (int i = 1; currentX <= b; i++) {
+            currentY = calcFunction(currentX);
+            System.out.printf("f(%.2f) = %.2f%n", currentX, currentY);
+            currentX = a + i * h;
         }
     }
 

@@ -1,19 +1,21 @@
 package part03.task08;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getInt;
 
 class Main {
     public static void main(String[] args) {
-        System.out.println("Enter a, b");
-        Scanner in = new Scanner(System.in);
-        int m = in.nextInt();
-        int n = in.nextInt();
+        int m;
+        int n;
+
+        System.out.println("Enter 2 numbers");
+        m = getInt();
+        n = getInt();
         printCommonDigits(m, n);
     }
 
     private static void printCommonDigits(int m, int n) {
         int digitsNumber = 10;
-        System.out.print(String.format("Common digits for %d and %d:", m, n));
+        System.out.printf("Common digits for %d and %d:", m, n);
 
         for (int i = 0; i < digitsNumber; i++) {
             boolean mContains = false;

@@ -1,16 +1,22 @@
 package part02.task02;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getInt;
 
 class Main {
     public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        int d;
+        int result;
+
         System.out.println("Enter a, b, c, d");
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        int b = in.nextInt();
-        int c = in.nextInt();
-        int d = in.nextInt();
-        System.out.println(findMaxMin(a, b, c, d));
+        a = getInt();
+        b = getInt();
+        c = getInt();
+        d = getInt();
+        result = findMaxMin(a, b, c, d);
+        System.out.println(result);
     }
 
     @SuppressWarnings("ManualMinMaxCalculation")

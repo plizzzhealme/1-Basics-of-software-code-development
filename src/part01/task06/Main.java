@@ -1,14 +1,18 @@
 package part01.task06;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getInt;
 
 class Main {
     public static void main(String[] args) {
+        int x;
+        int y;
+        boolean result;
+
         System.out.println("Enter x and y coordinates");
-        Scanner in = new Scanner(System.in);
-        int x = in.nextInt();
-        int y = in.nextInt();
-        System.out.println(checkPoint(x, y));
+        x = getInt();
+        y = getInt();
+        result = checkPoint(x, y);
+        System.out.println(result);
     }
 
     private static boolean checkPoint(int x, int y) {

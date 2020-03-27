@@ -1,13 +1,15 @@
 package part03.task05;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getDouble;
 
 class Main {
     public static void main(String[] args) {
+        double e;
+        double sum;
+
         System.out.println("Enter e");
-        Scanner in = new Scanner(System.in);
-        double e = in.nextDouble();
-        double sum = calcSum(e);
+        e = getDouble();
+        sum = calcSum(e);
         System.out.printf("Sum = %.3f", sum);
     }
 

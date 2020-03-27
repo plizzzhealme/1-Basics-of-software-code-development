@@ -1,13 +1,15 @@
 package part02.task01;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getPositiveInt;
 
 class Main {
     public static void main(String[] args) {
+        int angle1;
+        int angle2;
+
         System.out.println("Enter the angles");
-        Scanner in = new Scanner(System.in);
-        int angle1 = in.nextInt();
-        int angle2 = in.nextInt();
+        angle1 = getPositiveInt();
+        angle2 = getPositiveInt();
         printTriangleInfo(angle1, angle2);
     }
 

@@ -1,17 +1,23 @@
 package part02.task03;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getInt;
 
 class Main {
     public static void main(String[] args) {
+        int x1;
+        int y1;
+        int x2;
+        int y2;
+        int x3;
+        int y3;
+
         System.out.println("Enter the coordinates");
-        Scanner in = new Scanner(System.in);
-        int x1 = in.nextInt();
-        int y1 = in.nextInt();
-        int x2 = in.nextInt();
-        int y2 = in.nextInt();
-        int x3 = in.nextInt();
-        int y3 = in.nextInt();
+        x1 = getInt();
+        y1 = getInt();
+        x2 = getInt();
+        y2 = getInt();
+        x3 = getInt();
+        y3 = getInt();
 
         if (isCollinear(x1, y1, x2, y2, x3, y3)) {
             System.out.println("These points are collinear");

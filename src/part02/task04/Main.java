@@ -1,26 +1,31 @@
 package part02.task04;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getPositiveInt;
 
 class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the hole dimensions");
-        int a = in.nextInt();
-        int b = in.nextInt();
-        System.out.println("Enter the brick dimensions");
-        int x = in.nextInt();
-        int y = in.nextInt();
-        int z = in.nextInt();
+        int a;
+        int b;
+        int x;
+        int y;
+        int z;
 
-        if (canPass(a, b, x, y, z)) {
+        System.out.println("Enter the hole dimensions");
+        a = getPositiveInt();
+        b = getPositiveInt();
+        System.out.println("Enter the brick dimensions");
+        x = getPositiveInt();
+        y = getPositiveInt();
+        z = getPositiveInt();
+
+        if (isBrickPass(a, b, x, y, z)) {
             System.out.println("You shall pass");
         } else {
             System.out.println("YOU SHALL NOT PASS!");
         }
     }
 
-    private static boolean canPass(int a, int b, int x, int y, int z) {
+    private static boolean isBrickPass(int a, int b, int x, int y, int z) {
         return x <= a && y <= b
                || y <= a && x <= b
                || x <= a && z <= b

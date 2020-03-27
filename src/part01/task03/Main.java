@@ -1,17 +1,24 @@
 package part01.task03;
 
-import java.util.Scanner;
-
+import static cleaner.Cleaner.getDouble;
 import static java.lang.Math.*;
 
 class Main {
     public static void main(String[] args) {
+        double x;
+        double y;
+        double result;
+
         System.out.println("Enter x, y");
-        Scanner in = new Scanner(System.in);
-        double x = in.nextDouble();
-        double y = in.nextDouble();
-        double z = calcFunction(x, y);
-        System.out.printf("z = %.3f", z);
+        x = getDouble();
+        y = getDouble();
+        result = calcFunction(x, y);
+
+        if (Double.isInfinite(result)) {
+            System.out.println("Error! Dividing by zero");
+        } else {
+            System.out.printf("z = %.3f", result);
+        }
     }
 
     private static double calcFunction(double x, double y) {

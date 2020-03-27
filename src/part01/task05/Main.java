@@ -1,13 +1,16 @@
 package part01.task05;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getPositiveInt;
 
 class Main {
     public static void main(String[] args) {
+        int t;
+        String time;
+
         System.out.println("Enter time in seconds");
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        System.out.println(convertTime(t));
+        t = getPositiveInt();
+        time = convertTime(t);
+        System.out.println(time);
     }
 
     private static String convertTime(int t) {

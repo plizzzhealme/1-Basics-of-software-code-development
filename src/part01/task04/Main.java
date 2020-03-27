@@ -1,13 +1,15 @@
 package part01.task04;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getDouble;
 
 class Main {
     public static void main(String[] args) {
+        double xxxyyy;
+        double yyyxxx;
+
         System.out.println("Enter number in xxx.yyy format");
-        Scanner in = new Scanner(System.in);
-        double xxxyyy = in.nextDouble();
-        double yyyxxx = replacePartsOfNumber(xxxyyy);
+        xxxyyy = getDouble();
+        yyyxxx = replacePartsOfNumber(xxxyyy);
         System.out.printf("%07.3f", yyyxxx);
     }
 

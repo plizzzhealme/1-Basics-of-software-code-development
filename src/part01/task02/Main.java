@@ -1,20 +1,26 @@
 package part01.task02;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getDouble;
 
 class Main {
     public static void main(String[] args) {
-        System.out.println("Enter a, b, c");
-        Scanner in = new Scanner(System.in);
-        double a = in.nextDouble();
-        double b = in.nextDouble();
-        double c = in.nextDouble();
-        double z = calcFunction(a, b, c);
+        double a;
+        double b;
+        double c;
+        double result;
 
-        if (Double.isNaN(z)) {
-            System.out.println("Negative numbers can't have square roots");
+        System.out.println("Enter a, b, c");
+        a = getDouble();
+        b = getDouble();
+        c = getDouble();
+        result = calcFunction(a, b, c);
+
+        if (Double.isNaN(result)) {
+            System.out.println("Error! Negative number under square root");
+        } else if (Double.isInfinite(result)) {
+            System.out.println("Error! Division by zero");
         } else {
-            System.out.printf("z = %.3f", z);
+            System.out.printf("z = %.3f", result);
         }
     }
 

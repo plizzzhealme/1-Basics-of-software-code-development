@@ -1,16 +1,20 @@
 package part01.task01;
 
-import java.util.Scanner;
+import static cleaner.Cleaner.getInt;
 
 class Main {
     public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        int result;
+
         System.out.println("Enter a, b, c");
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        int b = in.nextInt();
-        int c = in.nextInt();
-        int z = calcFunction(a, b, c);
-        System.out.printf("z = %d", z);
+        a = getInt();
+        b = getInt();
+        c = getInt();
+        result = calcFunction(a, b, c);
+        System.out.printf("z = %d", result);
     }
 
     private static int calcFunction(int a, int b, int c) {
