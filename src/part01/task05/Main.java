@@ -1,6 +1,6 @@
 package part01.task05;
 
-import static cleaner.Cleaner.getPositiveInt;
+import static interaction.Interaction.getPositiveInt;
 
 class Main {
     public static void main(String[] args) {

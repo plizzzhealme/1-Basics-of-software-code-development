@@ -1,11 +1,11 @@
-package cleaner;
+package interaction;
 
 import java.util.Scanner;
 
-public class Cleaner {
-    public static int getInt() {
-        Scanner in = new Scanner(System.in);
+public class Interaction {
+    private static final Scanner in = new Scanner(System.in);
 
+    public static int getInt() {
         while (!in.hasNextInt()) {
             in.next();
             System.out.println("Enter an integer");
@@ -27,8 +27,6 @@ public class Cleaner {
     }
 
     public static double getDouble() {
-        Scanner in = new Scanner(System.in);
-
         while (!in.hasNextDouble()) {
             in.next();
             System.out.println("Enter a real number");

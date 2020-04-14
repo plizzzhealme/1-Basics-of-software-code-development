@@ -1,6 +1,6 @@
 package part01.task02;
 
-import static cleaner.Cleaner.getDouble;
+import static interaction.Interaction.getDouble;
 
 class Main {
     public static void main(String[] args) {
