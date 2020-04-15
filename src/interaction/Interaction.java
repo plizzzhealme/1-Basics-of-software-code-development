@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Interaction {
     private static final Scanner in = new Scanner(System.in);
 
+    private Interaction() {
+    }
+
     public static int getInt() {
         while (!in.hasNextInt()) {
             in.next();

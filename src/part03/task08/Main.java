@@ -10,36 +10,34 @@ class Main {
         System.out.println("Enter 2 numbers");
         m = getInt();
         n = getInt();
+        System.out.printf("Common digits for %d and %d:", m, n);
         printCommonDigits(m, n);
     }
 
     private static void printCommonDigits(int m, int n) {
         int digitsNumber = 10;
-        System.out.printf("Common digits for %d and %d:", m, n);
 
         for (int i = 0; i < digitsNumber; i++) {
-            boolean mContains = false;
-            boolean nContains = false;
-            int tempN = n;
-            int tempM = m;
-
-            while (tempM != 0 && !mContains) {
-                if (tempM % digitsNumber == i) {
-                    mContains = true;
-                }
-                tempM /= digitsNumber;
-            }
-
-            while (tempN != 0 && !nContains) {
-                if (tempN % digitsNumber == i) {
-                    nContains = true;
-                }
-                tempN /= digitsNumber;
-            }
-
-            if (mContains && nContains) {
+            if (hasDigit(m, i) && hasDigit(n, i)) {
                 System.out.print(" " + i);
             }
         }
+    }
+
+    private static boolean hasDigit(int number, int digit) {
+        int digitsNumber = 10;
+        int temp = Math.abs(number);
+
+        if (temp < digitsNumber) {
+            return temp == digit;
+        }
+
+        while (temp != 0) {
+            if (temp % digitsNumber == digit) {
+                return true;
+            }
+            temp /= 10;
+        }
+        return false;
     }
 }
