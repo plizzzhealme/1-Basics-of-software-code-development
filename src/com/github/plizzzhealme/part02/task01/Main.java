@@ -3,8 +3,8 @@ package com.github.plizzzhealme.part02.task01;
 import static com.github.plizzzhealme.interaction.Interaction.getPositiveInt;
 
 /*
-Даны 2 угла в градусах. Определить, существует ли такой треугольник. Если да,
-будет ли он прямоугольным
+Даны 2 угла в градусах. Определить, существует ли такой треугольник.
+Если да, будет ли он прямоугольным
  */
 class Main {
     public static void main(String[] args) {
