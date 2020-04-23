@@ -16,6 +16,7 @@ class Main {
         a = getDouble();
         b = getDouble();
         c = getDouble();
+
         result = calcFunction(a, b, c);
 
         if (Double.isNaN(result)) {

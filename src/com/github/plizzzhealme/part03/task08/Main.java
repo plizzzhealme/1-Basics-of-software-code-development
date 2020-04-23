@@ -13,6 +13,7 @@ class Main {
         System.out.println("Enter 2 numbers");
         m = getInt();
         n = getInt();
+
         System.out.printf("Common digits for %d and %d:", m, n);
         printCommonDigits(m, n);
     }

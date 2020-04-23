@@ -18,14 +18,19 @@ class Main {
         b = getInt();
         c = getInt();
         d = getInt();
+
         result = calcMaxMin(a, b, c, d);
+
         System.out.println(result);
     }
 
     @SuppressWarnings("ManualMinMaxCalculation")
     private static int calcMaxMin(int a, int b, int c, int d) {
-        int min1 = a < b ? a : b;
-        int min2 = c < d ? c : d;
+        int min1;
+        int min2;
+
+        min1 = a < b ? a : b;
+        min2 = c < d ? c : d;
         return min1 > min2 ? min1 : min2;
     }
 }

@@ -16,6 +16,7 @@ class Main {
         System.out.println("Enter the hole dimensions");
         a = getPositiveInt();
         b = getPositiveInt();
+
         System.out.println("Enter the brick dimensions");
         x = getPositiveInt();
         y = getPositiveInt();

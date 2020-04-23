@@ -13,7 +13,9 @@ class Main {
 
         System.out.println("Enter number in xxx.yyy format");
         xxxyyy = getDouble();
+
         yyyxxx = swapPartsOfNumber(xxxyyy);
+
         System.out.printf("%07.3f", yyyxxx);
     }
 

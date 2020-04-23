@@ -15,6 +15,7 @@ class Main {
         System.out.println("Enter 2 angles");
         angle1 = getPositiveInt();
         angle2 = getPositiveInt();
+
         angle3 = calcThirdAngle(angle1, angle2);
 
         if (angle3 == 90) {

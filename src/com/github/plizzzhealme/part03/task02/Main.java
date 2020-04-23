@@ -25,6 +25,7 @@ class Main {
 
         System.out.println("Enter the step size");
         h = getPositiveDouble();
+
         printFunctionValues(a, b, h);
     }
 

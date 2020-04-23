@@ -11,6 +11,7 @@ class Main {
         BigInteger facFac;
 
         facFac = calcFacFac(n);
+
         System.out.println(facFac);
     }
 

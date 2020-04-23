@@ -9,6 +9,7 @@ class Main {
         long sum;
 
         sum = calcSquaresSum(n);
+
         System.out.println(sum);
     }
 

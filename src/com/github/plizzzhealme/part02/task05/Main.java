@@ -12,7 +12,9 @@ class Main {
 
         System.out.println("Enter x");
         x = getDouble();
+
         f = calcFunction(x);
+
         System.out.printf("f(%.3f) = %.3f", x, f);
     }
 

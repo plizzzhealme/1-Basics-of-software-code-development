@@ -14,6 +14,7 @@ class Main {
         System.out.println("Enter x, y");
         x = getDouble();
         y = getDouble();
+
         result = calcFunction(x, y);
 
         if (Double.isInfinite(result)) {

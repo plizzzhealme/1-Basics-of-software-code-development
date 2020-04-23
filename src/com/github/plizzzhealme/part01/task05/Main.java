@@ -13,7 +13,9 @@ class Main {
 
         System.out.println("Enter time in seconds");
         t = getPositiveInt();
+
         time = convertTime(t);
+
         System.out.println(time);
     }
 

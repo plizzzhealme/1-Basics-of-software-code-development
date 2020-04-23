@@ -12,7 +12,9 @@ class Main {
 
         System.out.println("Enter any number");
         n = getPositiveInt();
+
         sum = calcSum(n);
+
         System.out.printf("Sum = %d", sum);
     }
 

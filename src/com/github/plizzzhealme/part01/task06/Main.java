@@ -14,7 +14,9 @@ class Main {
         System.out.println("Enter x and y coordinates");
         x = getInt();
         y = getInt();
+
         result = checkPoint(x, y);
+
         System.out.println(result);
     }
 

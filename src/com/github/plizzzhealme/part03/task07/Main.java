@@ -25,7 +25,6 @@ class Main {
         for (int i = m; i <= n; i++) {
             System.out.printf("%3d dividers:", i);
             printDividers(i);
-            System.out.println();
         }
     }
 
@@ -44,5 +43,6 @@ class Main {
                 }
             }
         }
+        System.out.println();
     }
 }

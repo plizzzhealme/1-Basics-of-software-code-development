@@ -12,7 +12,9 @@ class Main {
 
         System.out.println("Enter e");
         e = getDouble();
+
         sum = calcSum(e);
+
         System.out.printf("Sum = %.3f", sum);
     }
 

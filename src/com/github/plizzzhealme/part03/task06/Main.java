@@ -11,7 +11,7 @@ class Main {
 
     private static void printChars() {
         for (int i = 32; i < 128; i++) {
-            System.out.println(String.format("%03d - %c", i, i));
+            System.out.printf("%03d - %c%n", i, i);
         }
     }
 }
