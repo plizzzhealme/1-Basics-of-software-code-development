@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task08;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import static io.github.plizzzhealme.interaction.Interaction.getInt;
 
 /*
 Определить цифры, входящие в запись как первого так и второго числа
@@ -11,40 +11,42 @@ class Main {
         int n;
 
         System.out.println("Enter 2 numbers");
-        m = Interaction.getInt();
-        n = Interaction.getInt();
+        m = getInt();
+        n = getInt();
 
-        System.out.printf("Common digits for %d and %d%n:", m, n);
+        System.out.printf("Common digits for %d and %d:%n", m, n);
         printCommonDigits(m, n);
     }
 
     private static void printCommonDigits(int m, int n) {
+        int digit = 0;
         int mTable;
         int nTable;
-        int table;
-        int i = 0;
+        int commonTable;
 
         mTable = buildDigitsTable(m);
         nTable = buildDigitsTable(n);
-        table = mTable + nTable;
+        commonTable = mTable + nTable;  //digit 2 in the table is for common digits of both numbers
 
-        while (table > 0) {
-            if (table % 10 == 2) {
-                System.out.println(i);
+        while (commonTable > 0) {
+            if (commonTable % 10 == 2) {
+                System.out.println(digit);
             }
-            table /= 10;
-            i++;
+            commonTable /= 10;
+            digit++;
         }
     }
 
     /*
     Builds digits table for the number. Each digit int the table is 0 or 1,
     depending on whether the corresponding digit is found in the number or not.
-    Adds 10^0 for 0, 10^1 for 1, 10^2 for 2 and so on.
+    Adds 10^0 for 0, 10^1 for 1, 10^2 for 2, 10^3 for 3, etс.
+    The table is used to avoid extra iterations over the numbers.
 
-    For example:
-    table:               0001101111 is for 6523210
-    corresponding digit: 9876543210
+    Example:
+    table: 0001101111 is for 6523210
+           ^^^^^^^^^^
+    digit: 9876543210
      */
     private static int buildDigitsTable(int n) {
         int table = 0;
