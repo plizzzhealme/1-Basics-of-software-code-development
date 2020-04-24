@@ -15,10 +15,10 @@ class Main {
         n = Interaction.getInt();
 
         System.out.printf("Common digits for %d and %d%n:", m, n);
-        print(m, n);
+        printCommonDigits(m, n);
     }
 
-    private static void print(int m, int n) {
+    private static void printCommonDigits(int m, int n) {
         int mTable;
         int nTable;
         int table;
