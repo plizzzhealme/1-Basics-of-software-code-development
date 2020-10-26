@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part02.task03;
 
-import static io.github.plizzzhealme.interaction.Interaction.getInt;
+import static io.github.plizzzhealme.console.Input.getInt;
 
 /*
 Определить, лежат ли 3 точки на одной прямой

@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part01.task05;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Дано натуральное число T, которое представляет длительность прошедшего времени в секундах.
@@ -12,7 +12,7 @@ class Main {
         String time;
 
         System.out.println("Enter time in seconds");
-        t = Interaction.getPositiveInt();
+        t = Input.getPositiveInt();
 
         time = convertTime(t);
 

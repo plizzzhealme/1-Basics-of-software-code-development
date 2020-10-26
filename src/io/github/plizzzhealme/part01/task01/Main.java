@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part01.task01;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Найдите значение функции
@@ -13,9 +13,9 @@ class Main {
         double result;
 
         System.out.println("Enter a, b, c");
-        a = Interaction.getDouble();
-        b = Interaction.getDouble();
-        c = Interaction.getDouble();
+        a = Input.getDouble();
+        b = Input.getDouble();
+        c = Input.getDouble();
 
         result = calcFunction(a, b, c);
 

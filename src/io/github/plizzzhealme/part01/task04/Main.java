@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part01.task04;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Дано действительное число R вида xxx.yyy (три числовых раздряда в дробной и целой частях).
@@ -12,7 +12,7 @@ class Main {
         double yyyxxx;
 
         System.out.println("Enter number in xxx.yyy format");
-        xxxyyy = Interaction.getDouble();
+        xxxyyy = Input.getDouble();
 
         yyyxxx = swapPartsOfNumber(xxxyyy);
 

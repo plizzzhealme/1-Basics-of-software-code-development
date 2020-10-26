@@ -1,11 +1,11 @@
-package io.github.plizzzhealme.interaction;
+package io.github.plizzzhealme.console;
 
 import java.util.Scanner;
 
-public class Interaction {
+public class Input {
     private static final Scanner in = new Scanner(System.in);
 
-    private Interaction() {
+    private Input() {
     }
 
     public static int getInt() {

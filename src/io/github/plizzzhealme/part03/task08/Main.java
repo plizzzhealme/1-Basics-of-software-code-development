@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task08;
 
-import static io.github.plizzzhealme.interaction.Interaction.getInt;
+import static io.github.plizzzhealme.console.Input.getInt;
 
 /*
 Определить цифры, входящие в запись как первого так и второго числа
@@ -40,7 +40,7 @@ class Main {
     /*
     Builds digits table for the number. Each digit int the table is 0 or 1,
     depending on whether the corresponding digit is found in the number or not.
-    Adds 10^0 for 0, 10^1 for 1, 10^2 for 2, 10^3 for 3, etс.
+    Adds 1 for 0, 10 for 1, 100 for 2, 1000 for 3, etс.
     The table is used to avoid extra iterations over the numbers.
 
     Example:

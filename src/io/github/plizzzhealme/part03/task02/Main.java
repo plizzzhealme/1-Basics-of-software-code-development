@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task02;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Вычислить значение функции на отрезке [a;b] с шагом h
@@ -12,10 +12,10 @@ class Main {
         double h;
 
         System.out.println("Enter the interval");
-        a = Interaction.getDouble();
+        a = Input.getDouble();
 
         do {
-            b = Interaction.getDouble();
+            b = Input.getDouble();
 
             if (b < a) {
                 System.out.println("b must be greater than a");
@@ -23,7 +23,7 @@ class Main {
         } while (b < a);
 
         System.out.println("Enter the step size");
-        h = Interaction.getPositiveDouble();
+        h = Input.getPositiveDouble();
 
         printFunctionValues(a, b, h);
     }

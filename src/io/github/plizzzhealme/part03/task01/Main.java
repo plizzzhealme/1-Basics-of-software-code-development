@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task01;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Сложить цифры от 1 до n
@@ -11,7 +11,7 @@ class Main {
         long sum;
 
         System.out.println("Enter any number");
-        n = Interaction.getPositiveInt();
+        n = Input.getPositiveInt();
 
         sum = calcSum(n);
 

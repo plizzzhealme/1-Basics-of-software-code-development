@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part02.task01;
 
-import static io.github.plizzzhealme.interaction.Interaction.getPositiveInt;
+import static io.github.plizzzhealme.console.Input.getPositiveInt;
 
 /*
 Даны 2 угла в градусах. Определить, существует ли такой треугольник.

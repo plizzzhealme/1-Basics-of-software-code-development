@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part02.task02;
 
-import static io.github.plizzzhealme.interaction.Interaction.getInt;
+import static io.github.plizzzhealme.console.Input.getInt;
 
 /*
 Найти max{min(a,b),min(c,d)}

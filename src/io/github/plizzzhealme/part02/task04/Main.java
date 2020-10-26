@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part02.task04;
 
-import static io.github.plizzzhealme.interaction.Interaction.getPositiveInt;
+import static io.github.plizzzhealme.console.Input.getPositiveInt;
 
 /*
 Определить, пройдет ли кирпич x, y, z через отверстие A, B

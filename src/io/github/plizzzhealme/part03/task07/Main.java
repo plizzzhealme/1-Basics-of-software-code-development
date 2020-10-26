@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task07;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Для каждого натурального числа в диапазоне [m;n]
@@ -12,10 +12,10 @@ class Main {
         int n;
 
         System.out.println("Enter the interval");
-        m = Interaction.getPositiveInt();
+        m = Input.getPositiveInt();
 
         do {
-            n = Interaction.getPositiveInt();
+            n = Input.getPositiveInt();
 
             if (n < m) {
                 System.out.println("n must be greater than m");

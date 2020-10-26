@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part03.task05;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Найти сумму членов ряда, модуль которых больше либо равен заданному e
@@ -11,7 +11,7 @@ class Main {
         double sum;
 
         System.out.println("Enter e");
-        e = Interaction.getDouble();
+        e = Input.getDouble();
 
         sum = calcSum(e);
 

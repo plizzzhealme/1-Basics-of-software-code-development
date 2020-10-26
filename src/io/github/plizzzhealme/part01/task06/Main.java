@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part01.task06;
 
-import static io.github.plizzzhealme.interaction.Interaction.getInt;
+import static io.github.plizzzhealme.console.Input.getInt;
 
 /*
 Напечатать true, если точка (x;y) принадлежит закрашенной области, false - в противном случае

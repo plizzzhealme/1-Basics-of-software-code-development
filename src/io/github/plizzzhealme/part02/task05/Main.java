@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part02.task05;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Вычислить значение функции
@@ -11,7 +11,7 @@ class Main {
         double f;
 
         System.out.println("Enter x");
-        x = Interaction.getDouble();
+        x = Input.getDouble();
 
         f = calcFunction(x);
 

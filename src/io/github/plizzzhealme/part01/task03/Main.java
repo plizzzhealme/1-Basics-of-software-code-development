@@ -1,6 +1,6 @@
 package io.github.plizzzhealme.part01.task03;
 
-import io.github.plizzzhealme.interaction.Interaction;
+import io.github.plizzzhealme.console.Input;
 
 /*
 Вычислить значение выражения по формуле (все переменные принимают действительные значения)
@@ -12,8 +12,8 @@ class Main {
         double result;
 
         System.out.println("Enter x, y");
-        x = Interaction.getDouble();
-        y = Interaction.getDouble();
+        x = Input.getDouble();
+        y = Input.getDouble();
 
         result = calcFunction(x, y);
 
